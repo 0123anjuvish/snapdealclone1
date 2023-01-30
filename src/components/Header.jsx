@@ -9,6 +9,8 @@ import { Stack } from "@mui/material";
 //import {HiOutlineShoppingCart } from "react-icons/fa";
 //import { FaUserCircle } from "react-icons/fa";
 const Header = () => {
+
+  const ids1 = localStorage.getItem("ids")|| []
   return (
     <>
       <div className="navbar-header">
@@ -63,7 +65,7 @@ const Header = () => {
              
                 <FaCartArrowDown  />
              
-              {localStorage.getItem("ids").length ||null}
+             {ids1.length}
               </Stack>
             </Link>
           
